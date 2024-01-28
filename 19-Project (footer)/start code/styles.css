@@ -92,7 +92,7 @@
   .longread {
     grid-template-areas:
       "b b s"
-      "b b s"
+      "b b v"
       "b b v"
       "b b .";
     gap: 60px 24px;
@@ -101,7 +101,7 @@
   .blog {
     grid-area: b;
   }
-  .social {
+  .socials {
     grid-area: s;
   }
   .video {
@@ -210,4 +210,11 @@
 .footer {
   padding: 16px;
   background-color: var(--blue-light);
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 8px;
 }
